@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<!-- Bootstrap icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- my css -->
+    <link rel="stylesheet" href="keranjang.css" />
+
+    <title>T-Shirt</title>
+  </head>
+    <!-- Navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top p-1 mp-1">
+        <div class="container">
+          <a class="navbar-brand dark" href="#">
+            <img src="/img/Aset/Logo.png" width="180"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <div class="dropdown m-1">
+                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                  Produk
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <li><button class="dropdown-item" type="button">T-Shirt</button></li>
+                  <li><button class="dropdown-item" type="button">Hoodie</button></li>
+                  <li><button class="dropdown-item" type="button">Headwear</button></li>
+                </ul>
+              </div>
+              <div class="dropdown m-1">
+                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                  Season
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <li><button class="dropdown-item" type="button">Spring summer 1</button></li>
+                  <li><button class="dropdown-item" type="button">Spring Summer 2</button></li>
+                  <li><button class="dropdown-item" type="button">Spring Summer 3</button></li>
+                </ul>
+              </div>
+              <li class="nav-item">
+                <a class="nav-link" href="/login/login.html">Login/Register</a>
+              </li>
+              <li class="nav-item">
+                <a href="/wishlist/wishlist.html" class="nav-link"><i class=" h4 list-unstyled bi bi-heart"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="h4 bi bi-cart2"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <h2>Chart</h2>
+      <main id="cart-items">
+        <!-- Daftar item keranjang akan ditambahkan melalui JavaScript -->
+      </main>
+    
+      <div class="cart-item">
+        <img src="/img/Aset/BITCH.png" alt="Product 1">
+        <div class="item-details">
+          <h2>Product 1</h2>
+          <p>Price: Rp.149.999</p>
+          <p>Quantity: 1</p>
+        </div>
+        <button class="remove-btn">Remove</button>
+      </div>
+  
+      <div class="cart-item">
+        <img src="/img/Aset/LOVE HURTS.png" alt="Product 2">
+        <div class="item-details">
+          <h2>Product 2</h2>
+          <p>Price: Rp.149.999</p>
+          <p>Quantity: 2</p>
+        </div>
+        <button class="remove-btn">Remove</button>
+      </div>
+  
+      <div class="cart-item">
+        <img src="/img/biru logo.png" alt="Product 3">
+        <div class="item-details">
+          <h2>Product 3</h2>
+          <p>Price: Rp.149.999</p>
+          <p>Quantity: 3</p>
+        </div>
+        <button class="remove-btn">Remove</button>
+      </div>
+  
+      <div class="total">
+        <h3>Total:</h3>
+        <p>Rp.899.994</p>
+      </div>
+    
+      <button class="checkout-btn" onclick="checkout()">Checkout</button>
+
+<script src="keranjang.js"></script>
+</body>
+</html>
